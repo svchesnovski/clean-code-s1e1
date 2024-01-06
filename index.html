@@ -22,11 +22,11 @@
     </nav>
   </header>
   <main class="form-wrapper">
-    <section class="form-wrapper__add-item-section" id="add-item-section">
-      <label for="add-item-input" class="form-wrapper__label">Add Item</label>
-      <div class="form-wrapper__add-item-row">
-        <input id="add-item-input" class="form-wrapper__task" type="text">
-        <button class="form-wrapper__button form-wrapper__button--add">Add</button>
+    <section id="add-item-section">
+      <label for="add-item-input">Add Item</label>
+      <div class="add-item-row">
+        <input id="add-item-input" class="task" type="text">
+        <button>Add</button>
       </div>
     </section>
     <section class="form-wrapper__task-list">
@@ -41,10 +41,12 @@
             <img src="./remove.svg" class="form-wrapper__task-list-button-delete-icon">
           </button>
         </li>
+
         <li class="form-wrapper__task-list-item form-wrapper__task-list-item--edit-mode">
           <input type="checkbox" class="form-wrapper__task-list-checkbox">
           <label class="form-wrapper__task-list-label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="form-wrapper__task-list-input form-wrapper__task-list-input--hidden">
+          <input type="text" value="Go Shopping"
+            class="form-wrapper__task-list-input form-wrapper__task-list-input--hidden">
           <button class="form-wrapper__task-list-button form-wrapper__task-list-button--edit">Save</button>
           <button class="form-wrapper__task-list-button form-wrapper__task-list-button--delete">
             <img src="./remove.svg" class="form-wrapper__task-list-button-delete-icon">

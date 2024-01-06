@@ -60,8 +60,8 @@ button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-.form-wrapper__task-list-heading,
-.form-wrapper__label, .form-wrapper__completed-tasks-heading {
+h3,
+label[for="add-item-input"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +87,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-.form-wrapper__label {
+label[for="add-item-input"] {
   display: block;
   margin: 0 0 20px;
 }
@@ -136,7 +136,7 @@ input[type="text"]:focus {
 }
 
 /* Edit Task */
-.form-wrapper__task-list-item input[type=text] {
+ul li input[type=text] {
     display:none
 }
 

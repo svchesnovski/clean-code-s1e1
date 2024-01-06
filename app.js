@@ -10,7 +10,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 var taskInput=document.getElementById("add-item-input");//Add a new task.
-var addButton=document.querySelector(".form-wrapper__button--add");//first button
+var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
@@ -94,10 +94,17 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
+<<<<<<< HEAD
     var editInput=listItem.querySelector('.form-wrapper__task-list-input');
     var label=listItem.querySelector(".form-wrapper__task-list-label");
     var editBtn=listItem.querySelector(".form-wrapper__task-list-button--edit");
     var containsClass=listItem.classList.contains("form-wrapper__task-list-item--edit-mode");
+=======
+    var editInput=listItem.querySelector('input[type=text]');
+    var label=listItem.querySelector("label");
+    var editBtn=listItem.querySelector(".edit");
+    var containsClass=listItem.classList.contains("edit-mode");
+>>>>>>> 7a0c234 (refactor(extended-1.1, 1.2): add some changes to improve semantics and add media alternatives)
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -111,7 +118,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("form-wrapper__task-list-item--edit-mode");
+    listItem.classList.toggle("edit-mode");
 };
 
 
