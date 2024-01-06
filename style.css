@@ -61,7 +61,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="add-item-title"] {
+label[for="add-item-input"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +87,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="add-item-title"] {
+label[for="add-item-input"] {
   display: block;
   margin: 0 0 20px;
 }
@@ -136,8 +136,8 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-.input-hidden {
-  display: none;
+ul li input[type=text] {
+    display:none
 }
 
 .edit-mode input[type="text"] {
