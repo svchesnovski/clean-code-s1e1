@@ -4,25 +4,25 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.info-section {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.info-section img {
   width: 100%;
 }
-.aaa .more-inf {
+.info-section .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa {
+  .info-section {
     text-align: center;
   }
 }
-.centered-main-page-element {
+.form-wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -32,7 +32,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.add-item-row {
   display: flex;
 }
 ul {
@@ -61,7 +61,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+label[for="add-item-title"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,11 +87,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for="add-item-title"] {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+input#add-item-input {
   width: 318px;
 }
 
