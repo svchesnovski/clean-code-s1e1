@@ -10,7 +10,7 @@
   display: block;
   text-align: right;
 }
-.info-section img {
+.info-section__image {
   width: 100%;
 }
 .more-info {
@@ -27,12 +27,12 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.form-wrapper__task, .form-wrapper__task-list-input, .form-wrapper__task-list-label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.add-item-row {
+.form-wrapper__add-item-row {
   display: flex;
 }
 ul {
@@ -40,7 +40,7 @@ ul {
   padding: 0px;
 }
 li,
-h3 {
+.form-wrapper__task-list-heading {
   list-style: none;
 }
 input,
@@ -60,8 +60,8 @@ button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="add-item-input"] {
+.form-wrapper__task-list-heading,
+.form-wrapper__label, .form-wrapper__completed-tasks-heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +87,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="add-item-input"] {
+.form-wrapper__label {
   display: block;
   margin: 0 0 20px;
 }
@@ -96,7 +96,7 @@ label[for="add-item-input"] {
 }
 
 /* Task list */
-li {
+.form-wrapper__task-list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -104,47 +104,47 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.form-wrapper__task-list-item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.form-wrapper__task-list-item > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+.form-wrapper__task-list-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.form-wrapper__task-list-input {
   width: 226px;
 }
-.delete img {
+.form-wrapper__task-list-button-delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.form-wrapper__task-list-button-delete-icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .form-wrapper__task-list-label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.form-wrapper__task-list-item input[type=text] {
     display:none
 }
 
-.edit-mode input[type="text"] {
+.form-wrapper__task-list-item--edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.form-wrapper__task-list-item--edit-mode .form-wrapper__task-list-label {
   display: none;
 }
